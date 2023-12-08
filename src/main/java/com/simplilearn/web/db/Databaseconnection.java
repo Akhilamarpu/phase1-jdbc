@@ -1,4 +1,4 @@
-package com.simplilearn.webapp;
+package com.simplilearn.web.db;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -13,7 +13,7 @@ import java.sql.Statement;
  * 
  * @author khanw
  */
-public class DatabaseConnection {
+public class Databaseconnection {
 
 	// data source properties
 	private final String DB_URL = "jdbc:mysql://localhost:3306/estore_zone_db";
@@ -236,8 +236,3 @@ public class DatabaseConnection {
 	}
 
 }
-				
-
-
-
-

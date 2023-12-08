@@ -11,7 +11,7 @@
 	<h1 >JDBC CRUD Operations</h1>
 	<a href="init-connection" > Initialize Connection </a> | 
 	<a href="list-product" > List Product </a> | 
-	<a href="create-product" > Create Product</a> | 
+	<a href="Add-product" > Add Product</a> | 
 	<a href="update-product" > Update Product </a> | 
 	<a href="delete-product" > Delete Product </a> |
 	</div>> 

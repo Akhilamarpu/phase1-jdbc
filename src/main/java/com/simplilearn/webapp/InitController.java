@@ -9,18 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@Webservlet("/init-connection")
+import com.simplilearn.web.db.Databaseconnection;
 
-public class InitController extends HttpServlet {
+@WebServlet("/init-connection")
+public class InitController extends HttpServlet{
 	
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException,  IOException {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException { 
 		
 		// setting content type
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		
-		out.print("<h3>Int Request is handled.</h3>");
+		Databaseconnection connection = new Databaseconnection();
+		
+		connection.jdbcOperation();
+		
+		out.print("<h3>Connection Estanlised.</h3>");
 	}
-	
 
 }
